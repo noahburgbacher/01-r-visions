@@ -1,0 +1,33 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 8px 12px;
+  background: var(--pink-100, #ebdcdc);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.navbar-open {
+  position: fixed;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  padding: 16px 12px;
+  background: var(--pink-100, #ebdcdc);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-top: black solid 1px;
+  a {
+    text-decoration: none;
+  }
+  display: none;
+}
+.active {
+  display: flex;
+}
