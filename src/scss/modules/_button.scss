@@ -1,0 +1,30 @@
+.button {
+  display: flex;
+  padding: 8px 12px;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+  color: #000;
+
+  font-family: Karla;
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 4px;
+  background: var(--pink-300, #faa8a8);
+  border: 1px solid var(--pink-300, #faa8a8);
+}
+
+.button-primary:hover {
+  color: #faa8a8;
+  background: #fff;
+  border: 1px solid var(--pink-300, #faa8a8);
+}
+.button-secondary {
+  border: 1px solid var(--gray-900, #161a1c);
+  background: #fff;
+  border-radius: 0%;
+}
+.button-secondary:hover {
+  border: 1px solid var(--gray-500, #928c8c);
+  color: #928c8c;
+}
