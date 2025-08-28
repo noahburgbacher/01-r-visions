@@ -1,0 +1,64 @@
+.card {
+  display: flex;
+  width: 800px;
+  img {
+    width: 400px;
+    aspect-ratio: 400/266.99;
+  }
+  border-radius: 20px;
+  border: 1px solid var(--gray-500, #928c8c);
+  background: var(--white, #fff);
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+.card-content {
+  width: 400px;
+  background-color: white;
+  h2 {
+    color: var(--gray-900, #161a1c);
+
+    /* heading-1/desktop */
+    font-family: Karla;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; /* 100% */
+  }
+  display: flex;
+  padding: 20px 12px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  flex: 1 0 0;
+  align-self: stretch;
+}
+.card-lecture-time {
+  color: var(--gray-500, #928c8c);
+  font-size: 14px;
+}
+.card-title {
+  color: var(--gray-900, #161a1c);
+  font-size: 32px;
+  font-weight: 700;
+}
+.card-title:hover {
+  text-decoration: underline;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: auto;
+  text-decoration-thickness: 10.5%; /* 3.36px */
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+}
+.card-description {
+  color: var(--gray-900, #161a1c);
+  font-size: 16px;
+}
+@media (max-width: 800px) {
+  .card {
+    width: 400px;
+  }
+  .card-lecture-time {
+    align-self: end;
+  }
+}
